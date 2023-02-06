@@ -1,3 +1,20 @@
 baseURL = 'https://0DayResearchGroup.github.io'
 languageCode = 'en-us'
 title = '0DRG'
+
+staticDir = ["static", "themes/Niello/static"]
+
+[params]
+keywords = ""
+description = ""
+
+[menu]
+    [[menu.niello]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+    [[menu.niello]]
+    name = "About"
+    url = "/about/"
+    weight = 2
