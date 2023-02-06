@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>0DRG</title>
-    <link>https://0DayResearchGroup.github.io/</link>
-    <description>Recent content on 0DRG</description>
+    <title>Posts on 0DRG</title>
+    <link>https://0DayResearchGroup.github.io/posts/</link>
+    <description>Recent content in Posts on 0DRG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Feb 2023 13:18:33 +0100</lastBuildDate><atom:link href="https://0DayResearchGroup.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Feb 2023 13:18:33 +0100</lastBuildDate><atom:link href="https://0DayResearchGroup.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
       <link>https://0DayResearchGroup.github.io/posts/my-first-post/</link>
