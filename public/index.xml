@@ -6,14 +6,16 @@
     <description>Recent content on 0DRG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Feb 2023 13:18:33 +0100</lastBuildDate><atom:link href="https://0DayResearchGroup.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Feb 2023 21:35:39 +0100</lastBuildDate><atom:link href="https://0DayResearchGroup.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://0DayResearchGroup.github.io/posts/my-first-post/</link>
-      <pubDate>Mon, 06 Feb 2023 13:18:33 +0100</pubDate>
+      <title>Hacking A Vestel TV</title>
+      <link>https://0DayResearchGroup.github.io/posts/hacking_a_vestel_tv/</link>
+      <pubDate>Tue, 07 Feb 2023 21:35:39 +0100</pubDate>
       
-      <guid>https://0DayResearchGroup.github.io/posts/my-first-post/</guid>
-      <description>Hello world! this is the blog</description>
+      <guid>https://0DayResearchGroup.github.io/posts/hacking_a_vestel_tv/</guid>
+      <description>Hacking A Vestel Smart TV The 0DRG group decided to look at a readily avaliable voxicom smart TV as the first target. The Voxicon smart TV is a rebranding of a Vestel TV, from a Turkish TV manufacturer. Vestel makes TV&amp;rsquo;s for several well known vendors:
+ Toshiba Hitatchi Medion Polaroid Finlux  The TV&amp;rsquo;s come repackaged with a vendor specific config, but seem to otherwise be the same.
+We found several bugs in the Vestel firmware:</description>
     </item>
     
   </channel>
