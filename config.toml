@@ -1,4 +1,7 @@
 baseURL = 'https://0DayResearchGroup.github.io'
 languageCode = 'en-us'
 title = '0DRG'
-theme = "holy"
+theme = "hacker"
+
+[params]
+    colorScheme = "alexpate-34"
