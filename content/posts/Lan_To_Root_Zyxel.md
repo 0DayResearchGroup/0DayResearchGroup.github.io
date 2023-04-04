@@ -1,5 +1,5 @@
 ---
-title: "Lan_To_Root_Zyxel"
+title: "Lan To Root - Zyxel"
 date: 2023-04-04T20:04:41+02:00
 ---
 # Preface
